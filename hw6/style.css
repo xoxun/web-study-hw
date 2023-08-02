@@ -1,0 +1,45 @@
+*{
+    font-family:Times, serif;
+}
+body{
+    background-color: rgb(244, 244, 244);
+}
+h1{
+    text-align: center;
+}
+p{
+    font-weight: 900
+    margin-left: 5px;
+}
+
+.colorBox p+p {
+    font-size: 12px;
+}
+#boxContainer{
+    width: 370px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.colorBox{
+    width: 150px;
+    height: 270px;
+    margin: 10px;
+    border: 5px solid white;
+    position: relative;
+}
+
+.colorBox:first-child{background-color: tomato;}
+.colorBox:nth-child(2){background-color: teal;}
+.colorBox:nth-child(3){background-color: burlywood;}
+.colorBox:last-child{background-color: thistle;}
+
+.colorBox div{
+    width: 150px;
+    height: 85px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+}

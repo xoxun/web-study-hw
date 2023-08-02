@@ -1,0 +1,84 @@
+@keyframes rotating_image{
+    0%{
+        
+    }
+    50%{
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes waving_image{
+    0%{
+        transform:scaleY(1);
+    }
+    25%{
+        transform:scaleY(1);
+    }
+    50%{
+        transform:scaleY( 2.5 );
+    }
+    75%{
+        transform:scaleY(1);
+    }
+    100%{
+        transform:scaleY(1);
+    }
+}
+
+body{
+    background-color: black;
+}
+#blue-box{
+    width: 70vw;
+    height: 90vh;
+    margin: auto;
+    background-color:rgb(91, 189, 191) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#circle-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    animation: rotating_image 1.5s ease-in-out infinite;
+}
+#rectangle-box{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#circle-box div{
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    border-radius: 100%;
+    background-color: white;
+}
+#rectangle-box div{
+    width: 10px;
+    height: 30px;
+    margin: 2px;
+    background-color: white;
+    animation: waving_image 1s cubic-bezier(0.785, 0.135, 0.150, 0.860) infinite;
+    animation-fill-mode: forwards;
+    
+}
+
+#rectangle-box div:nth-child(2){
+    animation-delay: 0.1s;
+}
+#rectangle-box div:nth-child(3){
+    animation-delay: 0.2s;
+}
+#rectangle-box div:nth-child(4){
+    animation-delay: 0.3s;
+}
+#rectangle-box div:nth-child(5){
+    animation-delay: 0.4s;
+}

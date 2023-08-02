@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+body{
+    width: 410px;
+    height: 120vh;
+    margin: auto;
+    border: 5px solid mediumturquoise;
+}
+p,h2{
+    font-family: 'Open Sans', sans-serif;
+}
+.playlist-bar {
+    margin: 60px 0 40px 0;
+    display: flex;
+    align-items: center;
+}
+.playlist-bar .fa-xmark {
+    margin-left: 30px;
+}
+.playlist-bar .playlist-bar__title {
+    
+    margin: 0 auto;
+    font-size:25px;
+
+}
+.playlist-part{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.playlist-part__album {
+    background-color: rgb(255, 206, 109);
+    margin:0 15px 0 20px ;
+}
+.playlist-part__text-box p:first-child,
+.playlist-part__text-box p:nth-child(2) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 38px;
+}
+.playlist-part__text-box p:nth-child(3) {
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight:lighter;
+    color: rgb(64, 64, 64);
+}
+
+.thumbnail{
+    width: 60px;
+    height: 60px;
+    color: gray;
+    border: 3px solid black;
+    border-radius: 15%;
+}
+.thumbnail-big{
+    width: 150px;
+    height: 150px;
+}
+
+.button-part{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 35px 00;
+}
+.button-part__button:first-child{
+    display: flex;
+    border: 3px solid black;
+    border-radius: 15px;
+    border-bottom: 7px solid black;
+    padding: 17px 45px;
+    font-size: 20px;
+}
+.button-part__button:first-child .fa-play{
+    margin-right: 4px;
+}
+.button-part__button:nth-child(2),
+.button-part__button:nth-child(3){
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 50%;
+    border-bottom: 7px solid black;
+}
+
+.singing-part {
+    margin: 0 20px;
+}
+.singing-part__song-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.singing-part__text-box{
+    margin: 0 20px;
+}
+
+.singing-part__song-box:first-child .thumbnail{
+    background-color: tomato;
+}
+.singing-part__song-box:nth-child(2) .thumbnail{
+    background-color: hotpink;
+}
+.singing-part__song-box:nth-child(3) .thumbnail{
+    background-color:rgb(55, 113, 222);
+}
+.singing-part__song-box:nth-child(4) .thumbnail{
+    background-color: mediumaquamarine;
+}
+
+.singing-part__song-box div p:first-child{
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+.singing-part__song-box div p:nth-child(2){
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: gray;
+
+}

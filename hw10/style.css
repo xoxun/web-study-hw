@@ -1,0 +1,261 @@
+:root{ 
+    --main-color: rgb(213, 220, 228);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  width: 340px;
+  color: rgb(72, 73, 77);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Header */
+.header {
+  width: 340px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  margin-bottom: 20px;
+  background-color: var(--main-color);
+}
+
+.header__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.fa-bars-staggered {
+  margin: 10px 0 0 10px;
+}
+.fa-basket-shopping {
+  margin: 10px 10px 0 0px;
+}
+
+/* Search-bar */
+.search-bar {
+  position: relative;
+  top:-35px;
+  left:10px;
+  width: 320px;
+  
+}
+.search-bar__form { 
+  background-color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.search-bar input {
+  border: 1px solid rgb(255, 255, 255);
+  width: 230px;
+}
+.search-bar input::placeholder {
+  color: rgba(213, 220, 228,0.5);
+  font-weight: 600;
+}
+.search-bar button {
+  border: 0px;
+  background-color: white;
+  color: var(--main-color);
+}
+
+input:focus {
+	outline: none;
+}
+input:focus::placeholder{
+	color: white;
+  outline: none;
+}
+
+
+/* Content */
+.content {
+  padding: 0 20px;
+}
+/* Today-book */
+
+.today-book {
+  margin-bottom: 20px;
+}
+.today-book__book {
+  display: flex;
+
+  margin-top: 20px;
+}
+
+.book-cover {
+  width: 70px;
+  height: 100px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  transition: background-color 0.1s ease-in-out;
+}
+.book-cover:hover {
+  width: 70px;
+  height: 100px;
+  background-color: rgb(197, 204, 211);
+  border-radius: 10px;
+}
+.book-big {
+  width: 110px;
+  height: 165px;
+}
+.book-big:hover {
+  width: 110px;
+  height: 165px;
+}
+
+.today-book__info {
+  margin-left: 15px;
+}
+.today-book__info__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.today-book__info__author {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.star-box {
+padding: 3px;
+/* border: 1px solid var(--main-color); */
+border-radius: 20px;
+}
+.star-box .fa-star {
+  color:rgb(255, 213, 124);
+}
+
+.star-box .fa-star:last-child {
+  color:var(--main-color);
+}
+
+
+.btn {
+  background-color: rgb(236, 236, 236);
+  margin: 10px 0;
+  border: 0;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 13px;
+  color: rgb(101, 101, 101);
+  transition: background-color 0.2s ease-in-out;
+}
+.btn:hover {
+  background-color: rgb(217, 217, 217);
+  margin: 10px 0;
+  border: 0;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px 13px;
+}
+
+.today-book__info__buy-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.today-book__info__buy-box__bookmark {
+  /*border: 1px solid black;*/
+  padding: 6px 10px;
+  border-radius: 50px;
+  background-color: rgb(255, 213, 124);
+  transition: background-color 0.2s ease-in-out;
+}
+.today-book__info__buy-box__bookmark:hover {
+  /*border: 1px solid black;*/
+  padding: 6px 10px;
+  border-radius: 50px;
+  background-color: rgb(225, 194, 127);
+  
+}
+
+.today-book__info__buy-box__btn {
+  padding: 10px 30px;
+  background-color: rgb(72, 73, 77);
+  color: rgb(234, 234, 234);
+}
+.today-book__info__buy-box__btn:hover {
+  padding: 10px 30px;
+  background-color: rgb(234, 234, 234);
+  color: rgb(72, 73, 77);
+}
+
+/* Ranking */
+
+.ranking__title {
+  margin-bottom: 15px;
+}
+
+.ranking__slide {
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 15px;
+}
+/* 스크롤바 설정 */
+.ranking__slide::-webkit-scrollbar {
+  height: 0px;
+}
+
+.ranking__slide::-webkit-scrollbar-thumb {
+
+  background: var(--main-color); 
+  border-radius: 10px;
+}
+
+.ranking__book {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.ranking__book .star-box {
+  margin-left: 9px;
+}
+
+/* Authors */
+
+.authors__title {
+  margin-bottom: 15px;
+}
+
+.authors__img {
+  width: 80px;
+  height: 90px;
+}
+.authors__img:hover {
+  width: 80px;
+  height: 90px;
+}
+
+.authors__info {
+  display: flex;
+}
+
+.authors__content-box {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+}
+.authors__content-box p:first-child {
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+.authors__content-box p:last-child {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--main-color);
+}
